@@ -12,8 +12,5 @@ class Genre < ActiveRecord::Base
 
   def all_artist_names
     self.artists.pluck(:name)
-    # artist_names = []
-    # self.artists.each {|a| artist_names << a.name}
-    # artist_names
   end
 end
